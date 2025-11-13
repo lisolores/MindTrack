@@ -1,9 +1,6 @@
 
 
 header {
-    background-image: url('/assets/img/hero.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
     color:rgb(77, 77, 77);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,7 +9,9 @@ header {
     font-size: 300%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+main{
+    background:rgb(255, 255, 255)
+}
 .lang-switch{
     text-align: right;
     font-size: 200%;
@@ -55,3 +54,16 @@ footer{
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
 }
+
+.site-header{
+  background: url("../img/hero.jpg") center/cover no-repeat;
+  position: relative; padding: 96px 0; color:#ffffff00; text-align:center;
+}
+.site-header::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255, 255, 255, 0);
+}
+.site-header > *{
+    position:relative;z-index:1;}
