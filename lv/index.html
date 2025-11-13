@@ -3,18 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="alternate" hreflang="ru" href="../ru/index.html">
-    <link rel="alternate" hreflang="lv" href="../lv/index.html">
-    <link rel="alternate" hreflang="x-default" href="../ru/index.html">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Don't understand this one but seems it is for different screens to make readable-->
+    <link rel="alternate" hreflang="ru" href="/ru/index.html">
+    <link rel="alternate" hreflang="lv" href="/lv/index.html"><!--This and one above I don't understand, but they needed to RU and LV pages could exist-->
+    <link rel="alternate" hreflang="x-default" href="/ru/index.html">
+    <link rel="stylesheet" href="/assets/css/style.css"> <!--Needed to connect css and HTML, style does not work without this-->
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="site-header"> 
+        <nav class="topnav_container">
+            <h1> <a class="brand" href="#"> MindTrack</a> </h1> <!--This is done so link could be in center as heading is-->
+            <h2><a href="/lv/index.html">Galvenā lapa</a> <a href="/lv/blog/blog_list.html">Blogs</a> <a href="/lv/usefull.html"> Noderīgi</a></h2>
             <span class="lang-switch"> <a href="/ru/index.html">ru</a></span>
         </nav>
-        <h1>MindTrack</h1>
-        <h2>Vieglā iespēja sekot līdzi savai mentālai veselībai un saņemt maigos ieteikumus</h2>
     </header>
+</body>
+
+<main class="container">
+    <section class="hero grid-2">
+      <div class="hero__text">
+        <h1>Rūpes par mentālo veselību</h1>
+        <p>Īsie check-in, maigie ieteikumi</p>
+      </div>
+    </section>
+
+    <section class="features grid-3">
+      <article class="card">
+        <h2>Vienkārši</h2>
+        <p>Minimums darbību, maksimums jēgas</p>
+      </article>
+      <article class="card">
+        <h2>Privāti</h2>
+        <p>Dati pieder tikai tev - mēs par caurspīdīgumu</p>
+      </article>
+      <article class="card">
+        <h2>Noderīgi</h2>
+        <p>Uz tava ritma bāzēti ieteikumi</p>
+      </article>
+    </section>
+
+    <section class="blog-preview">
+        <h2>Svaigie materiāli</h2>
+        <ul class="post-list">
+            <li><a href="/lv/blog/post-1.html">Kā nepardegt: 5 mikro-paradumi</a></li>
+            <li><a href="/lv/blog/post-2.html">Miega higiēna - ātrais check-list</a></li>
+        </ul>
+    </section>
+
+    <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 MindTrack (mācību projekts)</small>
+    </div>
+  </footer>
+</main>
+</html>
